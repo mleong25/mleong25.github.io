@@ -1,0 +1,122 @@
+.infoBubble_Container {
+  width: 20%;
+}
+
+.infoBubble_Head {
+  border: 1px solid #f4f4f4;
+  border-left: 0;
+  border-right: 0;
+  padding-top: 0;
+  display: block;
+  position: relative;
+}
+
+.infoBubble_Head h4 {
+  margin: 4px;
+}
+
+.infoBubble {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 40px;
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.infoBubble img {
+  width: 50%;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@mixin transition($in) {
+	transition:$in;
+	-webkit-transition:$in;
+	-moz-transition:$in;
+	-o-transition:$in;
+	-ms-transition:$in;
+}
+
+.button {
+  outline:none;
+	border:none;
+  background-color:transparent;
+	position:relative;
+  @include transition(all 0.5s ease);
+}
+
+.button:hover {
+  animation: shakeThatBooty 0.3s linear 1;
+  -webkit-animation: shakeThatBooty 0.3s linear 1;
+  -moz-animation: shakeThatBooty 0.3s linear 1;
+  -o-animation: shakeThatBooty 0.3s linear 1;
+  -ms-animation: shakeThatBooty 0.3s linear 1;
+}
+
+@keyframes shakeThatBooty {
+  33% {
+    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    -o-transform: rotateZ(10deg);
+    -ms-transform: rotateZ(10deg);
+  }
+  67% {
+    transform: rotateZ(-10deg);
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    -o-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    -o-transform: rotateZ(10deg);
+    -ms-transform: rotateZ(10deg);
+  }
+}
+
+/*----Mobile----*/
+/*@media only screen and (max-width: 600px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .infoBubble_Container {
+    width: 20%;
+    align-items: center;
+  }
+  
+  .infoBubble {
+    display: inline-block;
+    position: relative;
+    justify-content: space-between;
+    margin: 40px;
+    text-align: center;
+    font-size: 4vw;
+  }
+  
+  .infoBubble_Head {
+    border: 1px solid #f4f4f4;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 0;
+    display: block;
+    position: relative;
+  }
+  
+  .infoBubble img {
+    width: 130%;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}*/

@@ -1,0 +1,10 @@
+.contentCard {
+  height: auto;
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 20px;
+  text-align: justify;
+  display: run-in;
+  border: 1px solid #ccc;
+  position: relative;
+}
