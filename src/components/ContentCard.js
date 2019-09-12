@@ -5,7 +5,8 @@ function ContentCard(props) {
   const styles = {
     backgroundColor: props.content.color,
     borderColor: props.content.color,
-    color: props.content.text
+    color: props.content.text,
+    backgroundImage: props.content.backgroundImage
   }
   
   return (

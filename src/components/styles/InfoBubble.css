@@ -9,10 +9,12 @@
   padding-top: 0;
   display: block;
   position: relative;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
-.infoBubble_Head h4 {
-  margin: 4px;
+.infoBubble_Head h3 {
+  margin: 10px;
 }
 
 .infoBubble {
@@ -20,12 +22,20 @@
   position: relative;
   justify-content: space-between;
   margin: 40px;
+  margin-top: 30px;
   text-align: center;
-  font-size: 2.5vw;
+}
+
+.infoBubble p {
+  line-height: 30px;
+  word-spacing: 3px;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  white-space: pre-wrap;
 }
 
 .infoBubble img {
-  width: 50%;
+  width: 40%;
   position: relative;
   display: block;
   cursor: pointer;
@@ -80,6 +90,10 @@
     -o-transform: rotateZ(10deg);
     -ms-transform: rotateZ(10deg);
   }
+}
+
+.infoBubble_Container p {
+  font-size: 16px;
 }
 
 /*----Mobile----*/

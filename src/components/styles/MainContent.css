@@ -2,3 +2,33 @@
   display: block;
   text-align: center;
 }
+
+.aboutMe {
+  text-align: center;
+  align-content: center;
+  background-color: #ccc;
+}
+
+.beau {
+  height: inherit;
+  margin-bottom: 2em;
+  position: relative;
+  border-radius: 60%;
+  border: .5px #b98a51;
+  box-shadow: 4px 6px 8px black;
+}
+
+.aboutMePic {
+  height: 275px;
+  margin-top: 2em;
+  position: relative;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.aboutMeDescription {
+  line-height: 1.8em;
+  word-spacing: 2px;
+  width: 70%;
+  margin-left: 15%;
+}
